@@ -1,0 +1,100 @@
+.introducao {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.foto {
+  margin: 0 auto;
+  display: flex;
+  width: 1400vw;
+  height: 867px;
+  background-image: url(/img/GABRIELLA\ E\ ERIKY\ RJ\ PRE-158\ 1300\ width.jpg);
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.foto::before {
+  content: ""; /* Importante para o pseudo-elemento funcionar */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.foto h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5rem;
+  color: #ffffff;
+  z-index: 1;
+  font-weight: 100;
+}
+
+.foto p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  z-index: 1;
+  font-weight: 100;
+}
+
+.mensagem {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  background-color: #bae2e2;
+  height: 300px;
+  width: 1400vw;
+}
+
+.mensagem h1 {
+  text-align: center;
+  align-self: center;
+  color: #4682b4;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 4px;
+}
+
+.mensagem p {
+  max-width: 85ch;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #708090;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .foto {
+    height: 300px;
+  }
+  .foto h1 {
+    font-size: 3rem;
+  }
+  .foto p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .foto {
+    height: 250px;
+  }
+  .foto h1 {
+    font-size: 2.1rem;
+  }
+  .foto p {
+    font-size: 0.5rem;
+  }
+  .mensagem h1 {
+    font-size: 1.2rem;
+  }
+  .mensagem p {
+    font-size: 0.9rem;
+  }
+}
