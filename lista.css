@@ -1,5 +1,6 @@
 .lista {
   margin: 0 auto;
+
   font-family: "Fira Sans", Arial, sens-serif;
   color: #141414;
 }
@@ -13,9 +14,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  background-color: #bae2e2;
+  background-color: #e0ffff;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .item {
