@@ -69,6 +69,10 @@
   font-size: 1.1rem;
 }
 
+.valor {
+  margin-bottom: 5px;
+}
+
 @media (max-width: 600px) {
   .foto {
     height: 300px;
